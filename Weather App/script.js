@@ -4,7 +4,7 @@ const detailsEls = document.querySelector(".details");
 
 async function getWeatherData(inputCity) {
   try {
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputCity}&appid=eaaea6f065df3274a3a71483c4bccd77`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputCity}&{yourapikey}`;
 
     const response = await fetch(url);
     if (!response.ok) {
