@@ -6,7 +6,7 @@ const exchageRateEl = document.getElementById("exchageRate");
 
 function updateRate() {
   fetch(
-    ` https://v6.exchangerate-api.com/v6/4d947bb03efdf888380c3b2a/latest/${currencyFirstEl.value}`
+    ` https://v6.exchangerate-api.com/v6/{yourapikey}/latest/${currencyFirstEl.value}`
   )
     .then((res) => res.json())
     .then((data) => {
