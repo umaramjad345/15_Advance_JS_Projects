@@ -1,0 +1,90 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-color: darkslateblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.passwordContainer {
+  background-color: lightgray;
+  width: 650px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  border-bottom: 5px solid black;
+}
+.passwordContainer h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  text-align: center;
+  color: darkslateblue;
+}
+.inputContainer {
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.inputContainer input {
+  width: 350px;
+  border: none;
+  background-color: transparent;
+  font-size: 24px;
+  letter-spacing: 4px;
+  outline: none;
+}
+.input::placeholder {
+  letter-spacing: 0px;
+}
+.fa-regular {
+  color: darkslateblue;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.fa-regular:hover {
+  opacity: 0.8;
+}
+.btn {
+  background-color: darkslateblue;
+  color: lightgray;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 7px;
+  margin: 10px 0px;
+  font-size: 25px;
+  width: 150px;
+}
+.btn:hover {
+  background-color: green;
+}
+.btn:active {
+  transform: scale(0.9);
+}
+.alertContainer {
+  position: fixed;
+  background-color: lightgray;
+  color: darkslateblue;
+  width: 300px;
+  height: 50px;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  transition: 0.4s;
+}
+.alertContainer.active {
+  right: -300px;
+}
